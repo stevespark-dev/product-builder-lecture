@@ -9,16 +9,14 @@ A simple, modern, and interactive web application that generates 6 unique random
   - Sorted display of numbers.
   - Interactive "Generate Numbers" button.
   - Dark-themed, responsive UI.
+  - Dark/Light Mode toggle with persistent user preference.
 - **Design:**
-  - Dark background with high-contrast text.
-  - Circular number displays.
-  - Centered layout for better UX.
-- **Technologies:**
-  - HTML5 (Web Components ready).
-  - CSS3 (Baseline features).
-  - Vanilla JavaScript (ES Modules style).
+  - Modern, responsive interface using CSS variables for theme management.
+  - Smooth transitions between themes.
+  - Accessibility-focused color contrast.
 
 ## Plan for Current Change
-- Upload the codebase to GitHub: `https://github.com/stevespark-dev/product-builder-lecture`.
-- Commit current changes and push to `main` branch.
-- Restore deleted documentation files.
+- Implement Dark/Light Mode toggle.
+- Refactor CSS to use variables for theming.
+- Persist theme preference in `localStorage`.
+- Update GitHub repository with new features.
