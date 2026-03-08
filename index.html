@@ -3,81 +3,130 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lotto Number Generator & AI Tools</title>
+    <title>Lotto Insights & AI Animal Face Test - Your AI Utility Hub</title>
+    <meta name="description" content="Discover your lucky numbers with our advanced Lotto Generator and find your animal lookalike with our AI Face Test. Expert insights on lotto statistics and AI technology.">
     <!-- Google AdSense -->
     <meta name="google-adsense-account" content="ca-pub-8760275498825119">
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8760275498825119"
      crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800;900&display=swap" rel="stylesheet">
     <!-- Teachable Machine Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest/dist/tf.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@latest/dist/teachablemachine-image.min.js"></script>
 </head>
 <body>
-    <button id="theme-toggle">Switch to Light Mode</button>
-    <div class="container">
-        <h1>Lotto Number Generator</h1>
-        <div class="lotto-numbers">
-            <span class="number"></span>
-            <span class="number"></span>
-            <span class="number"></span>
-            <span class="number"></span>
-            <span class="number"></span>
-            <span class="number"></span>
-        </div>
-        <button id="generate-btn">Generate Numbers</button>
+    <header>
+        <nav>
+            <div class="logo">AI Utility Hub</div>
+            <ul class="nav-links">
+                <li><a href="#lotto">Lotto</a></li>
+                <li><a href="#animal-test">Animal Test</a></li>
+                <li><a href="#insights">Insights</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button id="theme-toggle">Light Mode</button>
+        </nav>
+    </header>
 
-        <div class="animal-test-section">
+    <main class="container">
+        <section id="lotto">
+            <h1>Lotto Number Generator</h1>
+            <p>Our algorithm provides truly random and unbiased numbers for your next ticket.</p>
+            <div class="lotto-numbers">
+                <span class="number">?</span>
+                <span class="number">?</span>
+                <span class="number">?</span>
+                <span class="number">?</span>
+                <span class="number">?</span>
+                <span class="number">?</span>
+            </div>
+            <button id="generate-btn">Generate Lucky Numbers</button>
+        </section>
+
+        <section id="animal-test" class="animal-test-section">
             <hr>
-            <h3>Animal Face Test (Dog vs. Cat)</h3>
+            <h2>AI Animal Face Test</h2>
+            <p>Upload your photo and our trained AI model will analyze your facial features to find your animal lookalike (Dog vs. Cat).</p>
             <div class="upload-container">
                 <input type="file" id="image-upload" accept="image/*" hidden>
-                <button id="upload-btn" class="submit-btn">Upload Image</button>
+                <button id="upload-btn" class="submit-btn">Choose Photo to Analyze</button>
                 <div id="image-preview-container">
                     <img id="image-preview" src="#" alt="Preview" style="display: none;">
                 </div>
             </div>
             <div id="classification-result">
-                <p id="result-message">Upload an image to see the AI's prediction!</p>
+                <p id="result-message">Waiting for image upload...</p>
                 <div id="label-container"></div>
             </div>
-        </div>
+        </section>
 
-        <div class="contact-section">
+        <section id="insights">
             <hr>
-            <h3>Partnership Inquiry</h3>
+            <h2>Latest Insights & Articles</h2>
+            <div class="blog-grid">
+                <div class="blog-card">
+                    <h4>The Science of Randomness</h4>
+                    <p>Understanding how random number generators work and why they are essential for fair gaming experiences.</p>
+                </div>
+                <div class="blog-card">
+                    <h4>AI Facial Recognition Trends</h4>
+                    <p>How Teachable Machine and TensorFlow.js are bringing complex AI models directly to your web browser.</p>
+                </div>
+                <div class="blog-card">
+                    <h4>Lotto Statistics 2026</h4>
+                    <p>A deep dive into historical lotto data and common misconceptions about "hot" and "cold" numbers.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="legal">
+            <hr>
+            <div class="legal-section">
+                <h3>Privacy Policy & Terms</h3>
+                <p><strong>About Us:</strong> AI Utility Hub is dedicated to providing fun and functional web tools powered by modern technology. We prioritize user experience and transparency.</p>
+                <p><strong>Privacy:</strong> We do not store your uploaded images. All AI analysis happens directly in your browser using TensorFlow.js. We value your privacy and security.</p>
+                <p><strong>Terms:</strong> Our tools are for entertainment and utility purposes only. Results are generated via algorithms and do not guarantee any outcomes.</p>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <hr>
+            <h3>Get in Touch</h3>
+            <p>For partnership inquiries or feedback, please use the form below.</p>
             <form action="https://formspree.io/f/xqeyayqp" method="POST">
-                <input type="text" name="name" placeholder="Name" required>
-                <input type="email" name="email" placeholder="Email" required>
-                <textarea name="message" placeholder="Message" rows="4" required></textarea>
-                <button type="submit" class="submit-btn">Send Message</button>
+                <input type="text" name="name" placeholder="Full Name" required>
+                <input type="email" name="email" placeholder="Email Address" required>
+                <textarea name="message" placeholder="How can we help you?" rows="4" required></textarea>
+                <button type="submit" class="submit-btn">Send Inquiry</button>
             </form>
-        </div>
+        </section>
 
-        <div class="comments-section">
+        <section class="comments-section">
             <hr>
-            <h3>Comments</h3>
+            <h3>Community Discussion</h3>
             <div id="disqus_thread"></div>
             <script>
-                /**
-                *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-                *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
-                /*
-                var disqus_config = function () {
-                this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-                this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-                };
-                */
-                (function() { // DON'T EDIT BELOW THIS LINE
+                (function() {
                 var d = document, s = d.createElement('script');
                 s.src = 'https://productbuilder-b9n2mba1sr.disqus.com/embed.js';
                 s.setAttribute('data-timestamp', +new Date());
                 (d.head || d.body).appendChild(s);
                 })();
             </script>
-            <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-links">
+            <a href="#lotto">Lotto</a>
+            <a href="#animal-test">Animal AI</a>
+            <a href="#insights">Insights</a>
+            <a href="#contact">Contact</a>
         </div>
-    </div>
+        <p>&copy; 2026 AI Utility Hub. All rights reserved. | Powered by Modern Web Standards.</p>
+    </footer>
+
     <script src="main.js"></script>
 </body>
 </html>

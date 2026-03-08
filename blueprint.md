@@ -1,26 +1,26 @@
-# Lotto Number Generator Blueprint
+# Lotto Number Generator & AI Tools Blueprint
 
 ## Overview
-A simple, modern, and interactive web application that provides a lotto number generator, a partnership inquiry form, community comments, and an AI-powered animal face test.
+A high-quality, content-rich web application providing utility tools (Lotto, AI Animal Test) and informative content (Blog/Insights) designed to meet Google AdSense approval standards.
 
 ## Project Outline
-- **Features:**
-  - Random lotto number generation (1-45).
-  - Sorted display of numbers.
-  - Interactive "Generate Numbers" button.
-  - Dark-themed, responsive UI.
-  - Dark/Light Mode toggle with persistent user preference.
-  - Partnership Inquiry Form (powered by Formspree).
-  - Community Comments Section (powered by Disqus).
-  - Animal Face Test (Dog vs. Cat) using Teachable Machine.
-  - Google AdSense integration for monetization.
+- **Core Utility Features:**
+  - Random lotto number generation with animations.
+  - AI-powered Animal Face Test (Teachable Machine).
+- **Compliance & Content Features:**
+  - **Dynamic Blog Section:** Informative articles about Lotto statistics and AI technology.
+  - **Legal Pages:** Privacy Policy, Terms of Service, and About Us.
+  - **Navigation:** Professional header for easy access to all sections.
+  - **Monetization:** Google AdSense integration with `ads.txt`.
+  - **Engagement:** Disqus comments and Formspree contact form.
 - **Design:**
-  - Modern, responsive interface using CSS variables for theme management.
-  - Smooth transitions between themes.
-  - Accessibility-focused color contrast.
-  - Clean and minimal form, comment, and AI test design.
+  - Professional, mobile-responsive layout.
+  - Consistent branding with Dark/Light mode support.
+  - Fast loading times and intuitive UX.
 
 ## Plan for Current Change
-- Integrate Google AdSense script and meta tag.
-- Create `ads.txt` for domain verification.
-- Update GitHub repository with the monetization setup.
+- Implement a professional navigation bar and footer.
+- Add "Privacy Policy", "Terms of Service", and "About Us" sections.
+- Integrate a "Latest Insights" blog section with high-quality content placeholders.
+- Refine SEO meta tags and site structure for AdSense review.
+- Update GitHub repository.
