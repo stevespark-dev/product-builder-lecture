@@ -11,14 +11,15 @@ A simple, modern, and interactive web application that generates 6 unique random
   - Dark-themed, responsive UI.
   - Dark/Light Mode toggle with persistent user preference.
   - Partnership Inquiry Form (powered by Formspree).
+  - Community Comments Section (powered by Disqus).
 - **Design:**
   - Modern, responsive interface using CSS variables for theme management.
   - Smooth transitions between themes.
   - Accessibility-focused color contrast.
-  - Clean and minimal form design.
+  - Clean and minimal form and comment design.
 
 ## Plan for Current Change
-- Integrate Formspree for partnership inquiries.
-- Add a contact form section to the UI.
-- Style the form to be consistent with the existing theme (dark/light mode support).
+- Integrate Disqus for community comments.
+- Add a comment section to the UI.
+- Ensure proper spacing and layout for the new section.
 - Update GitHub repository with the new feature.
