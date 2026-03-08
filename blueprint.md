@@ -13,6 +13,7 @@ A simple, modern, and interactive web application that provides a lotto number g
   - Partnership Inquiry Form (powered by Formspree).
   - Community Comments Section (powered by Disqus).
   - Animal Face Test (Dog vs. Cat) using Teachable Machine.
+  - Google AdSense integration for monetization.
 - **Design:**
   - Modern, responsive interface using CSS variables for theme management.
   - Smooth transitions between themes.
@@ -20,8 +21,6 @@ A simple, modern, and interactive web application that provides a lotto number g
   - Clean and minimal form, comment, and AI test design.
 
 ## Plan for Current Change
-- Integrate Teachable Machine model for Dog vs. Cat classification.
-- Add an "Animal Face Test" section with image upload capability.
-- Implement image preview and AI result display.
-- Style the new section to match the existing design.
-- Update GitHub repository with the new feature.
+- Integrate Google AdSense script and meta tag.
+- Create `ads.txt` for domain verification.
+- Update GitHub repository with the monetization setup.
