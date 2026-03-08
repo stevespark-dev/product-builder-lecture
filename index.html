@@ -3,8 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lotto Number Generator</title>
+    <title>Lotto Number Generator & AI Tools</title>
     <link rel="stylesheet" href="style.css">
+    <!-- Teachable Machine Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest/dist/tf.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@latest/dist/teachablemachine-image.min.js"></script>
 </head>
 <body>
     <button id="theme-toggle">Switch to Light Mode</button>
@@ -19,6 +22,22 @@
             <span class="number"></span>
         </div>
         <button id="generate-btn">Generate Numbers</button>
+
+        <div class="animal-test-section">
+            <hr>
+            <h3>Animal Face Test (Dog vs. Cat)</h3>
+            <div class="upload-container">
+                <input type="file" id="image-upload" accept="image/*" hidden>
+                <button id="upload-btn" class="submit-btn">Upload Image</button>
+                <div id="image-preview-container">
+                    <img id="image-preview" src="#" alt="Preview" style="display: none;">
+                </div>
+            </div>
+            <div id="classification-result">
+                <p id="result-message">Upload an image to see the AI's prediction!</p>
+                <div id="label-container"></div>
+            </div>
+        </div>
 
         <div class="contact-section">
             <hr>
