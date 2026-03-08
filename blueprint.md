@@ -10,13 +10,15 @@ A simple, modern, and interactive web application that generates 6 unique random
   - Interactive "Generate Numbers" button.
   - Dark-themed, responsive UI.
   - Dark/Light Mode toggle with persistent user preference.
+  - Partnership Inquiry Form (powered by Formspree).
 - **Design:**
   - Modern, responsive interface using CSS variables for theme management.
   - Smooth transitions between themes.
   - Accessibility-focused color contrast.
+  - Clean and minimal form design.
 
 ## Plan for Current Change
-- Implement Dark/Light Mode toggle.
-- Refactor CSS to use variables for theming.
-- Persist theme preference in `localStorage`.
-- Update GitHub repository with new features.
+- Integrate Formspree for partnership inquiries.
+- Add a contact form section to the UI.
+- Style the form to be consistent with the existing theme (dark/light mode support).
+- Update GitHub repository with the new feature.
